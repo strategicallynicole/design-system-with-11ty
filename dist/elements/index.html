@@ -1,0 +1,617 @@
+<!doctype html>
+<html class="no-js" dir="ltr" lang="de">
+<head>
+	<meta charset="utf-8" />
+<title>SDI Design System | Sascha Diercks</title>
+
+	<meta name="description" content="Elements" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="MSSmartTagsPreventParsing" content="TRUE" />
+<meta name="language" content="de" />
+
+	<meta name="keywords" content="Frontend, SASS, CSS, HTML, Gulp, Design System, Pattern Library" />
+
+<link rel="stylesheet" href="/assets/css/site.css" type="text/css">
+<link rel="stylesheet" href="/assets/3rdparty/prism/prism.css" type="text/css">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon-foto-228x228.png">
+
+</head>
+<body id="sdi-elements">
+
+	<div class="sdi-wrapper">
+		<header class="sdi-header sdi-header--elements">
+	<div class="sdi-header__content sdi-container">
+		<a href="/" title="zur Statseite" class="sdi-logo"><svg width="67px" height="63px" viewBox="0 0 67 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo" transform="translate(1.000000, 1.000000)" stroke="#333333" fill-rule="nonzero">
+            <path d="M23.4956807,9.9951574 L28.9918835,0.475455 L39.9842891,0.475455 L45.4804918,9.9951574 L39.9842891,19.51486 L28.9918835,19.51486 L23.4956807,9.9951574 Z M16.9289644,60.69089 L5.93655877,60.69089 L0.440356,51.1711876 L5.93655877,41.651485 L16.9289644,41.651485 L22.4251671,51.1711876 L16.9289644,60.69089 Z M45.1789787,14.9073013 C53.3701662,18.8585296 59.021861,27.2419846 59.021861,36.9454644 C59.021861,37.4586395 59.0060538,37.9681225 58.9748998,38.4734532 L64.440356,47.939901 L58.9441533,57.4596036 L47.9517476,57.4596036 L47.9331297,57.4273561 C44.0915915,59.939252 39.5002059,61.3995841 34.5677414,61.3995841 C29.7869539,61.3995841 25.3265911,60.0276839 21.5588591,57.6560893 L25.8921036,50.1506896 L19.775189,39.5558826 L10.2513106,39.5558826 C10.1602966,38.698202 10.1136218,37.827284 10.1136218,36.9454644 C10.1136218,27.2911887 15.7081453,18.9435845 23.832094,14.9677499 L28.3711716,22.8296631 L40.605001,22.8296631 L45.1789787,14.9073013 Z M39.9842891,27.3268493 L28.9918835,27.3268493 L23.4956807,36.8465519 L28.9918835,46.3662543 L39.9842891,46.3662543 L45.4804918,36.8465519 L39.9842891,27.3268493 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
+</a>
+		<nav>
+	<input type="checkbox" id="sdi-navigation__trigger" class="sdi-hidden sdi-trigger"/>
+	<label for="sdi-navigation__trigger" class="h2 sdi-hidden--m-up sdi-trigger">☰</label>
+
+	<div class="sdi-navigation">
+		<ul class="sdi-navigation__list sdi-ui-list sdi-margin-bottom--0"><li class="sdi-navigation__item"><a href="/" class="sdi-navigation__link">Home</a></li><li class="sdi-navigation__item"><a href="/elements/" class="sdi-navigation__link active ">Elements</a></li><li class="sdi-navigation__item"><a href="/objects/" class="sdi-navigation__link">Objects</a></li><li class="sdi-navigation__item"><a href="/components/" class="sdi-navigation__link">Components</a></li><li class="sdi-navigation__item"><a href="/utilities/" class="sdi-navigation__link">Utilities</a></li></ul>
+	</div>
+</nav>
+
+	</div>
+</header>
+
+
+		
+
+
+	<div class="sdi-hero sdi-full-width sdi-margin-bottom--200">
+		<div class="sdi-container sdi-center">
+			
+				<h1 class="sdi-hero__title">Viewing: Elements</h1>
+			
+			
+				<p class="sdi-hero__text sdi-margin-bottom--0 sdi-container sdi-container--narrow">Elements are fundamental to every website. We&#39;re styling them early on, so we can easily overwrite them with classes - when needed</p>
+			
+		</div>
+	</div>
+
+
+
+<main class="sdi-main">
+	<div class="sdi-container">
+		<div class="sdi-layout">
+
+			<div class="sdi-layout__item sdi-layout__item--25 sdi-sidebar">
+				<nav class="sdi-sticky">
+	<ul class="sdi-ui-list sdi-ui-list--vertical sdi-navigation--vertical">
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#code" class="sdi-navigation__link">code</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#figure" class="sdi-navigation__link">figure</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#headings" class="sdi-navigation__link">headings</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#hr" class="sdi-navigation__link">hr</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#links" class="sdi-navigation__link">links</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#lists" class="sdi-navigation__link">lists</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#main" class="sdi-navigation__link">main</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#section" class="sdi-navigation__link">section</a></li>
+			
+
+		
+	</ul>
+</nav>
+
+			</div>
+
+			<div class="sdi-layout__item sdi-layout__item--75">
+
+				
+				
+
+						
+						
+							
+
+							
+							<section id="code">
+								<h2>code</h2>
+
+								<div class="sdi-preview" id="code__preview">
+	<code>our code snippet</code>
+
+</div>
+
+
+
+<div class="sdi-code"  id="code__markup">
+	<pre><code class="language-html">&lt;code&gt;our code snippet&lt;/code&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="code__description">
+	<p>We can use <code>&lt;code&gt;</code> when we're in need to display code. Per default <code>&lt;code&gt;</code> is an inline-block element, so we can apply margin to it. <code>&lt;code&gt;</code>can be extended with an <a href="../utilities/#block">utility-class</a> like <code>sdi-block</code>.</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="figure">
+								<h2>figure</h2>
+
+								<div class="sdi-preview" id="figure__preview">
+	<figure>
+	<img src="/assets/images/figure.jpg" loading="lazy" alt="Figure" width="380">
+	<figcaption>
+		Photo by Christopher Gower on
+		<a href="https://unsplash.com/photos/m_HRfLhgABo">Unsplash</a>
+	</figcaption>
+</figure>
+
+</div>
+
+
+
+<div class="sdi-code"  id="figure__markup">
+	<pre><code class="language-html">&lt;figure&gt;
+	&lt;img src=&quot;/assets/images/figure.jpg&quot; loading=&quot;lazy&quot; alt=&quot;Figure&quot; width=&quot;380&quot;&gt;
+	&lt;figcaption&gt;
+		Photo by Christopher Gower on
+		&lt;a href=&quot;https://unsplash.com/photos/m_HRfLhgABo&quot;&gt;Unsplash&lt;/a&gt;
+	&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="figure__description">
+	<p>Figure is used to display images. we can extend it with figcaption to add an description.</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="headings">
+								<h2>headings</h2>
+
+								<div class="sdi-preview" id="headings__preview">
+	<h1 class="h1">Heading 1 / .h1</h1>
+<h2 class="h2">Heading 2 / .h2</h2>
+<h3 class="h3">Heading 3 / .h3</h3>
+<h4 class="h4">Heading 4 / .h4</h4>
+<h5 class="h5">Heading 5 / .h5</h5>
+<h6 class="h6">Heading 6 / .h6</h6>
+
+</div>
+
+
+
+<div class="sdi-code"  id="headings__markup">
+	<pre><code class="language-html">&lt;h1 class=&quot;h1&quot;&gt;Heading 1 / .h1&lt;/h1&gt;
+&lt;h2 class=&quot;h2&quot;&gt;Heading 2 / .h2&lt;/h2&gt;
+&lt;h3 class=&quot;h3&quot;&gt;Heading 3 / .h3&lt;/h3&gt;
+&lt;h4 class=&quot;h4&quot;&gt;Heading 4 / .h4&lt;/h4&gt;
+&lt;h5 class=&quot;h5&quot;&gt;Heading 5 / .h5&lt;/h5&gt;
+&lt;h6 class=&quot;h6&quot;&gt;Heading 6 / .h6&lt;/h6&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="headings__description">
+	<p>These are the 6 available headings (h1-h6).
+We can overwrite the font-size with heading classes. So <code>&lt;h1 class=&quot;h2&quot;&gt;...&lt;/h1&gt;</code> will make an h1 appear as an h2. This way we are decoupling the semantics from the layout.</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="hr">
+								<h2>hr</h2>
+
+								<div class="sdi-preview" id="hr__preview">
+	<hr />
+
+</div>
+
+
+
+<div class="sdi-code"  id="hr__markup">
+	<pre><code class="language-html">&lt;hr /&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="hr__description">
+	<p>Use an <code>&lt;hr/&gt;</code> to separate content-blocks.</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="links">
+								<h2>links</h2>
+
+								<div class="sdi-preview" id="links__preview">
+	<a href="#">a typical link</a>
+
+</div>
+
+
+
+<div class="sdi-code"  id="links__markup">
+	<pre><code class="language-html">&lt;a href=&quot;#&quot;&gt;a typical link&lt;/a&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="links__description">
+	<p>Links are the essence of the web. Use, where appropriate.</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="lists">
+								<h2>lists</h2>
+
+								<div class="sdi-preview" id="lists__preview">
+	<ul>
+	<li>item in a list</li>
+	<li>item in a list</li>
+	<li>item in a list</li>
+</ul>
+
+
+<ol>
+	<li>item in a list</li>
+	<li>item in a list</li>
+	<li>item in a list</li>
+</ol>
+
+</div>
+
+
+
+<div class="sdi-code"  id="lists__markup">
+	<pre><code class="language-html">&lt;ul&gt;
+	&lt;li&gt;item in a list&lt;/li&gt;
+	&lt;li&gt;item in a list&lt;/li&gt;
+	&lt;li&gt;item in a list&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;ol&gt;
+	&lt;li&gt;item in a list&lt;/li&gt;
+	&lt;li&gt;item in a list&lt;/li&gt;
+	&lt;li&gt;item in a list&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="lists__description">
+	<p>This is the default layout for lists. If we're in need for things like breadcrumbs or a vertical navigation, extend the with the classes <code>sdi-ui-list</code> &amp; <code>sdi-ui-list--vertical</code>. See here: <a href="../objects/#ui-list">ui-lists</a></p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="main">
+								<h2>main</h2>
+
+								<div class="sdi-preview" id="main__preview">
+	<main>the main element</main>
+
+</div>
+
+
+
+<div class="sdi-code"  id="main__markup">
+	<pre><code class="language-html">&lt;main&gt;the main element&lt;/main&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="main__description">
+	<p>The <code>main</code>-element is used to place our main-content in.</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="section">
+								<h2>section</h2>
+
+								<div class="sdi-preview" id="section__preview">
+	<section>The section element</section>
+
+</div>
+
+
+
+<div class="sdi-code"  id="section__markup">
+	<pre><code class="language-html">&lt;section&gt;The section element&lt;/section&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="section__description">
+	<p>We can use a section to slice our content/article into several topics.</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+			</div>
+
+		</div>
+
+	</div>
+</main>
+
+
+
+		<footer class="sdi-footer sdi-center--s" role="contentinfo">
+	<div class="sdi-container">
+
+	</div>
+</footer>
+
+<!-- TODO: needs improvement -->
+
+	</div>
+
+	<a href="#" class="sdi-scroll-top">
+	<span class="sdi-scroll-top__icon">⇧</span>
+</a>
+
+
+<script src="/assets/js/site.js" type="text/javascript"></script>
+</body>
+</html>

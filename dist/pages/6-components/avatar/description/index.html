@@ -1,0 +1,559 @@
+<!doctype html>
+<html class="no-js" dir="ltr" lang="de">
+<head>
+	<meta charset="utf-8" />
+<title>SDI Design System | Sascha Diercks</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="MSSmartTagsPreventParsing" content="TRUE" />
+<meta name="language" content="de" />
+
+<link rel="stylesheet" href="/assets/css/site.css" type="text/css">
+<link rel="stylesheet" href="/assets/3rdparty/prism/prism.css" type="text/css">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon-foto-228x228.png">
+
+</head>
+<body id="sdi-components">
+
+	<div class="sdi-wrapper">
+		<header class="sdi-header sdi-header--components">
+	<div class="sdi-header__content sdi-container">
+		<a href="/" title="zur Statseite" class="sdi-logo"><svg width="67px" height="63px" viewBox="0 0 67 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo" transform="translate(1.000000, 1.000000)" stroke="#333333" fill-rule="nonzero">
+            <path d="M23.4956807,9.9951574 L28.9918835,0.475455 L39.9842891,0.475455 L45.4804918,9.9951574 L39.9842891,19.51486 L28.9918835,19.51486 L23.4956807,9.9951574 Z M16.9289644,60.69089 L5.93655877,60.69089 L0.440356,51.1711876 L5.93655877,41.651485 L16.9289644,41.651485 L22.4251671,51.1711876 L16.9289644,60.69089 Z M45.1789787,14.9073013 C53.3701662,18.8585296 59.021861,27.2419846 59.021861,36.9454644 C59.021861,37.4586395 59.0060538,37.9681225 58.9748998,38.4734532 L64.440356,47.939901 L58.9441533,57.4596036 L47.9517476,57.4596036 L47.9331297,57.4273561 C44.0915915,59.939252 39.5002059,61.3995841 34.5677414,61.3995841 C29.7869539,61.3995841 25.3265911,60.0276839 21.5588591,57.6560893 L25.8921036,50.1506896 L19.775189,39.5558826 L10.2513106,39.5558826 C10.1602966,38.698202 10.1136218,37.827284 10.1136218,36.9454644 C10.1136218,27.2911887 15.7081453,18.9435845 23.832094,14.9677499 L28.3711716,22.8296631 L40.605001,22.8296631 L45.1789787,14.9073013 Z M39.9842891,27.3268493 L28.9918835,27.3268493 L23.4956807,36.8465519 L28.9918835,46.3662543 L39.9842891,46.3662543 L45.4804918,36.8465519 L39.9842891,27.3268493 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
+</a>
+		<nav>
+	<input type="checkbox" id="sdi-navigation__trigger" class="sdi-hidden sdi-trigger"/>
+	<label for="sdi-navigation__trigger" class="h2 sdi-hidden--m-up sdi-trigger">☰</label>
+
+	<div class="sdi-navigation">
+		<ul class="sdi-navigation__list sdi-ui-list sdi-margin-bottom--0"><li class="sdi-navigation__item"><a href="/" class="sdi-navigation__link">Home</a></li><li class="sdi-navigation__item"><a href="/elements/" class="sdi-navigation__link">Elements</a></li><li class="sdi-navigation__item"><a href="/objects/" class="sdi-navigation__link">Objects</a></li><li class="sdi-navigation__item"><a href="/components/" class="sdi-navigation__link">Components</a></li><li class="sdi-navigation__item"><a href="/utilities/" class="sdi-navigation__link">Utilities</a></li></ul>
+	</div>
+</nav>
+
+	</div>
+</header>
+
+
+		
+
+
+	<div class="sdi-hero sdi-full-width sdi-margin-bottom--200">
+		<div class="sdi-container sdi-center">
+			
+				<h1 class="sdi-hero__title">Viewing: Components</h1>
+			
+			
+				<p class="sdi-hero__text sdi-margin-bottom--0 sdi-container sdi-container--narrow">These are the items we`ll use most often. Thee are the main ingredients to our website. Typical components are buttons or cards.</p>
+			
+		</div>
+	</div>
+
+
+
+<main class="sdi-main">
+	<div class="sdi-container">
+		<div class="sdi-layout">
+
+			<div class="sdi-layout__item sdi-layout__item--25 sdi-sidebar">
+				<nav class="sdi-sticky">
+	<ul class="sdi-ui-list sdi-ui-list--vertical sdi-navigation--vertical">
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#avatar" class="sdi-navigation__link">avatar</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#buttons" class="sdi-navigation__link">buttons</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#card" class="sdi-navigation__link">card</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#hero" class="sdi-navigation__link">hero</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#promo" class="sdi-navigation__link">promo</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#scroll-top" class="sdi-navigation__link">scroll-top</a></li>
+			
+
+		
+	</ul>
+</nav>
+
+			</div>
+
+			<div class="sdi-layout__item sdi-layout__item--75">
+
+				
+				
+
+						
+						
+							
+
+							
+							<section id="avatar">
+								<h2>avatar</h2>
+
+								<div class="sdi-preview" id="avatar__preview">
+	<img src="/assets/images/figure.jpg" width="100" height="100" class="sdi-avatar"/>
+
+</div>
+
+
+
+<div class="sdi-code"  id="avatar__markup">
+	<pre><code class="language-html">&lt;img src=&quot;/assets/images/figure.jpg&quot; width=&quot;100&quot; height=&quot;100&quot; class=&quot;sdi-avatar&quot;/&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="avatar__description">
+	<p>An Avatar is used to display ourself on the interwebs.</p>
+<p>For round avatars we'll use a square image and set the border-radius to <code>99rem</code>;</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="buttons">
+								<h2>buttons</h2>
+
+								<div class="sdi-preview" id="buttons__preview">
+	<!-- default buttons -->
+<a href="#" class="sdi-button">a button</a>
+<button class="sdi-button sdi-button--secondary">secondary button</button>
+
+<!-- downsized buttons -->
+<a href="#" class="sdi-button sdi-button--75">sdi-button--75</a>
+<button class="sdi-button sdi-button--secondary sdi-button--75">sdi-button--75</button>
+
+</div>
+
+
+
+<div class="sdi-code"  id="buttons__markup">
+	<pre><code class="language-html">&lt;!-- default buttons --&gt;
+&lt;a href=&quot;#&quot; class=&quot;sdi-button&quot;&gt;a button&lt;/a&gt;
+&lt;button class=&quot;sdi-button sdi-button--secondary&quot;&gt;secondary button&lt;/button&gt;
+
+&lt;!-- downsized buttons --&gt;
+&lt;a href=&quot;#&quot; class=&quot;sdi-button sdi-button--75&quot;&gt;sdi-button--75&lt;/a&gt;
+&lt;button class=&quot;sdi-button sdi-button--secondary sdi-button--75&quot;&gt;sdi-button--75&lt;/button&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="buttons__description">
+	<p>buttons come as primary and secondary buttons</p>
+<p>For scaled buttons we'll add a modifier-class like <code>sdi-button--75</code>.
+We are useing percentage-values for scaling, so we can easily add buttons between these ranges.</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="card">
+								<h2>card</h2>
+
+								<div class="sdi-preview" id="card__preview">
+	<!-- the defult card -->
+<div class="sdi-card">
+	<div class="sdi-card__header">
+		card__header
+	</div>
+	<div class="sdi-card__main">
+		card__main
+	</div>
+	<div class="sdi-card__footer">
+		card__footer
+	</div>
+</div>
+
+<!-- card lit and content only-->
+<div class="sdi-card sdi-card--lit">
+	<div class="sdi-card__main">
+		card__main
+	</div>
+</div>
+
+<!-- card lit and borderless-->
+<div class="sdi-card sdi-card--lit sdi-card--border-0">
+	<div class="sdi-card__main">
+		card__main
+	</div>
+</div>
+
+</div>
+
+
+
+<div class="sdi-code"  id="card__markup">
+	<pre><code class="language-html">&lt;!-- the defult card --&gt;
+&lt;div class=&quot;sdi-card&quot;&gt;
+	&lt;div class=&quot;sdi-card__header&quot;&gt;
+		card__header
+	&lt;/div&gt;
+	&lt;div class=&quot;sdi-card__main&quot;&gt;
+		card__main
+	&lt;/div&gt;
+	&lt;div class=&quot;sdi-card__footer&quot;&gt;
+		card__footer
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- card lit and content only--&gt;
+&lt;div class=&quot;sdi-card sdi-card--lit&quot;&gt;
+	&lt;div class=&quot;sdi-card__main&quot;&gt;
+		card__main
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- card lit and borderless--&gt;
+&lt;div class=&quot;sdi-card sdi-card--lit sdi-card--border-0&quot;&gt;
+	&lt;div class=&quot;sdi-card__main&quot;&gt;
+		card__main
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="card__description">
+	<p>Cards are useful containers to group content.
+Cards can be used to build login boxes too.</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="hero">
+								<h2>hero</h2>
+
+								<div class="sdi-preview" id="hero__preview">
+	<div class="sdi-hero">
+	<div class="sdi-hero__content">
+		<div class="sdi-hero__title">SDI Design System</div>
+		<p class="sdi-hero__text">This is a design system documentation powered by eleventy<br/>
+		It is structured using ITCSS and uses BEM for the styling.</p>
+	</div>
+</div>
+
+</div>
+
+
+
+<div class="sdi-code"  id="hero__markup">
+	<pre><code class="language-html">&lt;div class=&quot;sdi-hero&quot;&gt;
+	&lt;div class=&quot;sdi-hero__content&quot;&gt;
+		&lt;div class=&quot;sdi-hero__title&quot;&gt;SDI Design System&lt;/div&gt;
+		&lt;p class=&quot;sdi-hero__text&quot;&gt;This is a design system documentation powered by eleventy&lt;br/&gt;
+		It is structured using ITCSS and uses BEM for the styling.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="hero__description">
+	<p>Hero-containers are useful for site-headings. Group them with the class <code>sdi-full-width</code> to increase the effect.</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="promo">
+								<h2>promo</h2>
+
+								<div class="sdi-preview" id="promo__preview">
+	<!-- default promo -->
+<div class="sdi-promo">
+	Mit der Entwicklung dieser Website habe ich begonnen, ein
+		Design-System zu entwickeln, das mittels BEM und ITCSS strukturiert ist.
+</div>
+
+<!-- promo is lit and content is centered and narrowed -->
+<div class="sdi-promo sdi-promo--lit sdi-center">
+	<div class="sdi-container sdi-container--narrow">Mit der Entwicklung dieser Website habe ich begonnen, ein
+		Design-System zu entwickeln, das mittels BEM und ITCSS strukturiert ist.<br><a href="/design-system">Wirf einen
+			Blick darauf</a>
+	</div>
+</div>
+
+</div>
+
+
+
+<div class="sdi-code"  id="promo__markup">
+	<pre><code class="language-html">&lt;!-- default promo --&gt;
+&lt;div class=&quot;sdi-promo&quot;&gt;
+	Mit der Entwicklung dieser Website habe ich begonnen, ein
+		Design-System zu entwickeln, das mittels BEM und ITCSS strukturiert ist.
+&lt;/div&gt;
+
+&lt;!-- promo is lit and content is centered and narrowed --&gt;
+&lt;div class=&quot;sdi-promo sdi-promo--lit sdi-center&quot;&gt;
+	&lt;div class=&quot;sdi-container sdi-container--narrow&quot;&gt;Mit der Entwicklung dieser Website habe ich begonnen, ein
+		Design-System zu entwickeln, das mittels BEM und ITCSS strukturiert ist.&lt;br&gt;&lt;a href=&quot;/design-system&quot;&gt;Wirf einen
+			Blick darauf&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="promo__description">
+	<p>The promo is a container to promote content. Group it with <code>sdi-center</code> and use <code>sdi-promo--lit</code> to increase the effect.</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="scroll-top">
+								<h2>scroll-top</h2>
+
+								<div class="sdi-preview" id="scroll-top__preview">
+	<a href="#" class="sdi-scroll-top">
+	<span class="sdi-scroll-top__icon">⇧</span>
+</a>
+
+</div>
+
+
+
+<div class="sdi-code"  id="scroll-top__markup">
+	<pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;sdi-scroll-top&quot;&gt;
+	&lt;span class=&quot;sdi-scroll-top__icon&quot;&gt;⇧&lt;/span&gt;
+&lt;/a&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="scroll-top__description">
+	<p>We're using <code>scroll-top</code> to let the user easily access the top of the page. Per default it is just an anchor that doesn't exist on the page, so the browser scrolls to top. The best place for this is at the bottom of the page, so the user can reach this function with his thumbs instead of reaching for the top of the screen.</p>
+<p>We can easily toggle the visibility with some JavaScript and listening for the scroll depth.</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+			</div>
+
+		</div>
+
+	</div>
+</main>
+
+
+
+		<footer class="sdi-footer sdi-center--s" role="contentinfo">
+	<div class="sdi-container">
+
+	</div>
+</footer>
+
+<!-- TODO: needs improvement -->
+
+	</div>
+
+	<a href="#" class="sdi-scroll-top">
+	<span class="sdi-scroll-top__icon">⇧</span>
+</a>
+
+
+<script src="/assets/js/site.js" type="text/javascript"></script>
+</body>
+</html>

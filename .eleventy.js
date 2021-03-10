@@ -1,6 +1,9 @@
 const { DateTime } = require('luxon');
-
+const pluginSass = require("eleventy-plugin-sass");
+sassPluginOptions = require("./_config/sassPluginOptions.json")
 module.exports = function(eleventyConfig) {
+
+	  eleventyConfig.addPlugin(pluginSass, sassPluginOptions);
 
 	eleventyConfig.addFilter("readable_date", function(date) {
 		return DateTime.fromJSDate(date).toFormat('dd LLL yyyy')
@@ -61,12 +64,12 @@ module.exports = function(eleventyConfig) {
 	// Base eleventyConfig
 	return {
 		dir: {
-			input: './src/eleventy',
-			output: 'htdocs',
+			input: './src',
+			output: 'dist',
 			includes: 'includes',	// ⚠️ This value is relative to your input directory.
 			data: 'data'			// ⚠️ This value is relative to your input directory.
 		},
-		templateFormats: ['njk', 'md', 'html'],
+		templateFormats: ['njk', 'md', 'html', 'css'],
 		htmlTemplateEngine: 'njk',
 		markdownTemplateEngine: 'njk',
 		passthroughFileCopy: true

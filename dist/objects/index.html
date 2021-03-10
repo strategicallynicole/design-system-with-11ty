@@ -1,0 +1,614 @@
+<!doctype html>
+<html class="no-js" dir="ltr" lang="de">
+<head>
+	<meta charset="utf-8" />
+<title>SDI Design System | Sascha Diercks</title>
+
+	<meta name="description" content="Objects" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="MSSmartTagsPreventParsing" content="TRUE" />
+<meta name="language" content="de" />
+
+	<meta name="keywords" content="Frontend, SASS, CSS, HTML, Gulp, Design System, Pattern Library" />
+
+<link rel="stylesheet" href="/assets/css/site.css" type="text/css">
+<link rel="stylesheet" href="/assets/3rdparty/prism/prism.css" type="text/css">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon-foto-228x228.png">
+
+</head>
+<body id="sdi-objects">
+
+	<div class="sdi-wrapper">
+		<header class="sdi-header sdi-header--objects">
+	<div class="sdi-header__content sdi-container">
+		<a href="/" title="zur Statseite" class="sdi-logo"><svg width="67px" height="63px" viewBox="0 0 67 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo" transform="translate(1.000000, 1.000000)" stroke="#333333" fill-rule="nonzero">
+            <path d="M23.4956807,9.9951574 L28.9918835,0.475455 L39.9842891,0.475455 L45.4804918,9.9951574 L39.9842891,19.51486 L28.9918835,19.51486 L23.4956807,9.9951574 Z M16.9289644,60.69089 L5.93655877,60.69089 L0.440356,51.1711876 L5.93655877,41.651485 L16.9289644,41.651485 L22.4251671,51.1711876 L16.9289644,60.69089 Z M45.1789787,14.9073013 C53.3701662,18.8585296 59.021861,27.2419846 59.021861,36.9454644 C59.021861,37.4586395 59.0060538,37.9681225 58.9748998,38.4734532 L64.440356,47.939901 L58.9441533,57.4596036 L47.9517476,57.4596036 L47.9331297,57.4273561 C44.0915915,59.939252 39.5002059,61.3995841 34.5677414,61.3995841 C29.7869539,61.3995841 25.3265911,60.0276839 21.5588591,57.6560893 L25.8921036,50.1506896 L19.775189,39.5558826 L10.2513106,39.5558826 C10.1602966,38.698202 10.1136218,37.827284 10.1136218,36.9454644 C10.1136218,27.2911887 15.7081453,18.9435845 23.832094,14.9677499 L28.3711716,22.8296631 L40.605001,22.8296631 L45.1789787,14.9073013 Z M39.9842891,27.3268493 L28.9918835,27.3268493 L23.4956807,36.8465519 L28.9918835,46.3662543 L39.9842891,46.3662543 L45.4804918,36.8465519 L39.9842891,27.3268493 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
+</a>
+		<nav>
+	<input type="checkbox" id="sdi-navigation__trigger" class="sdi-hidden sdi-trigger"/>
+	<label for="sdi-navigation__trigger" class="h2 sdi-hidden--m-up sdi-trigger">☰</label>
+
+	<div class="sdi-navigation">
+		<ul class="sdi-navigation__list sdi-ui-list sdi-margin-bottom--0"><li class="sdi-navigation__item"><a href="/" class="sdi-navigation__link">Home</a></li><li class="sdi-navigation__item"><a href="/elements/" class="sdi-navigation__link">Elements</a></li><li class="sdi-navigation__item"><a href="/objects/" class="sdi-navigation__link active ">Objects</a></li><li class="sdi-navigation__item"><a href="/components/" class="sdi-navigation__link">Components</a></li><li class="sdi-navigation__item"><a href="/utilities/" class="sdi-navigation__link">Utilities</a></li></ul>
+	</div>
+</nav>
+
+	</div>
+</header>
+
+
+		
+
+
+	<div class="sdi-hero sdi-full-width sdi-margin-bottom--200">
+		<div class="sdi-container sdi-center">
+			
+				<h1 class="sdi-hero__title">Viewing: Objects</h1>
+			
+			
+				<p class="sdi-hero__text sdi-margin-bottom--0 sdi-container sdi-container--narrow">Objects are used to structure the content. They have no styling attached!</p>
+			
+		</div>
+	</div>
+
+
+
+<main class="sdi-main">
+	<div class="sdi-container">
+		<div class="sdi-layout">
+
+			<div class="sdi-layout__item sdi-layout__item--25 sdi-sidebar">
+				<nav class="sdi-sticky">
+	<ul class="sdi-ui-list sdi-ui-list--vertical sdi-navigation--vertical">
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#container" class="sdi-navigation__link">container</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#layout" class="sdi-navigation__link">layout</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#media" class="sdi-navigation__link">media</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#ui-list" class="sdi-navigation__link">ui-list</a></li>
+			
+
+		
+			
+
+			
+
+		
+			
+
+			
+				<li class="sdi-navigation__item"><a href="#wrapper" class="sdi-navigation__link">wrapper</a></li>
+			
+
+		
+	</ul>
+</nav>
+
+			</div>
+
+			<div class="sdi-layout__item sdi-layout__item--75">
+
+				
+				
+
+						
+						
+							
+
+							
+							<section id="container">
+								<h2>container</h2>
+
+								<div class="sdi-preview" id="container__preview">
+	<!-- The default container -->
+<div class="sdi-container">
+	If container-max-width is set to none, it will occupy 100% of the available width.
+</div>
+
+<!-- A narrow container -->
+<div class="sdi-container sdi-container--narrow">
+	This container is only available, if $container--narrow-max-width is NOT set to none
+</div>
+
+<!-- A wide container -->
+<div class="sdi-container sdi-container--wide">
+	This container is only available, if $container--wide-max-width is NOT set to none
+</div>
+
+</div>
+
+
+
+<div class="sdi-code"  id="container__markup">
+	<pre><code class="language-html">&lt;!-- The default container --&gt;
+&lt;div class=&quot;sdi-container&quot;&gt;
+	If container-max-width is set to none, it will occupy 100% of the available width.
+&lt;/div&gt;
+
+&lt;!-- A narrow container --&gt;
+&lt;div class=&quot;sdi-container sdi-container--narrow&quot;&gt;
+	This container is only available, if $container--narrow-max-width is NOT set to none
+&lt;/div&gt;
+
+&lt;!-- A wide container --&gt;
+&lt;div class=&quot;sdi-container sdi-container--wide&quot;&gt;
+	This container is only available, if $container--wide-max-width is NOT set to none
+&lt;/div&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="container__description">
+	<p>Containers are used to group content. Use the variations to narrow or widen the content. Use <code>sdi-full-width</code> to break out of a parent container.</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="layout">
+								<h2>layout</h2>
+
+								<div class="sdi-preview" id="layout__preview">
+	<!-- evenly distributed layout -->
+<div class="sdi-layout">
+	<div class="sdi-layout__item">
+		<div>50%</div>
+	</div>
+	<div class="sdi-layout__item">
+		<div>50%</div>
+	</div>
+</div>
+
+<!-- Variations -->
+<div class="sdi-layout">
+	<div class="sdi-layout__item sdi-layout__item--100">
+		<div>100%</div>
+	</div>
+
+	<div class="sdi-layout__item sdi-layout__item--25">
+		<div>25%</div>
+	</div>
+	<div class="sdi-layout__item sdi-layout__item--75">
+		<div>75%</div>
+	</div>
+
+	<div class="sdi-layout__item sdi-layout__item--50">
+		<div>50%</div>
+	</div>
+	<div class="sdi-layout__item sdi-layout__item--50">
+		<div>50%</div>
+	</div>
+
+	<div class="sdi-layout__item sdi-layout__item--33">
+		<div>33%</div>
+	</div>
+	<div class="sdi-layout__item sdi-layout__item--33">
+		<div>33%</div>
+	</div>
+	<div class="sdi-layout__item sdi-layout__item--33">
+		<div>33%</div>
+	</div>
+</div>
+
+</div>
+
+
+
+<div class="sdi-code"  id="layout__markup">
+	<pre><code class="language-html">&lt;!-- evenly distributed layout --&gt;
+&lt;div class=&quot;sdi-layout&quot;&gt;
+	&lt;div class=&quot;sdi-layout__item&quot;&gt;
+		&lt;div&gt;50%&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sdi-layout__item&quot;&gt;
+		&lt;div&gt;50%&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Variations --&gt;
+&lt;div class=&quot;sdi-layout&quot;&gt;
+	&lt;div class=&quot;sdi-layout__item sdi-layout__item--100&quot;&gt;
+		&lt;div&gt;100%&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;sdi-layout__item sdi-layout__item--25&quot;&gt;
+		&lt;div&gt;25%&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sdi-layout__item sdi-layout__item--75&quot;&gt;
+		&lt;div&gt;75%&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;sdi-layout__item sdi-layout__item--50&quot;&gt;
+		&lt;div&gt;50%&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sdi-layout__item sdi-layout__item--50&quot;&gt;
+		&lt;div&gt;50%&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;sdi-layout__item sdi-layout__item--33&quot;&gt;
+		&lt;div&gt;33%&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sdi-layout__item sdi-layout__item--33&quot;&gt;
+		&lt;div&gt;33%&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sdi-layout__item sdi-layout__item--33&quot;&gt;
+		&lt;div&gt;33%&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="layout__description">
+	<p><code>sdi-layout</code> is just a replacement for the typical grid-classes (<code>row</code> &amp; <code>col</code>).
+We're using <code>sdi-layout</code> because it's not a grid per se - although it can be used like one.
+The grid-gap is applied to layout__item (columns) as padding.</p>
+<p>(!) Some tools rely heavily on bootstrap-grids, so if we'd like to we could change the classnames to match bootstrap-classnames.
+The classnames are defined in <code>1-settings/variables</code> but we should set them here <code>themes/1-settings/variables</code>!</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="media">
+								<h2>media</h2>
+
+								<div class="sdi-preview" id="media__preview">
+	<div class="sdi-media">
+	<div class="sdi-media__object">
+		<img src="/assets/images/figure.jpg" width="150" alt="our image"/>
+	</div>
+	<div class="sdi-media__content">
+		Some other content<br/>
+		Photo by Christopher Gower on <a href="https://unsplash.com/photos/m_HRfLhgABo">Unsplash</a>
+	</div>
+</div>
+
+<!-- reverse direction and content is vertically centered -->
+<div class="sdi-media sdi-media--reversed sdi-media--center-vertical">
+	<div class="sdi-media__content">
+		Some other content<br/>
+		Photo by Christopher Gower on <a href="https://unsplash.com/photos/m_HRfLhgABo">Unsplash</a>
+	</div>
+	<div class="sdi-media__object">
+		<img src="/assets/images/figure.jpg" width="150" alt="our image"/>
+	</div>
+</div>
+
+<!-- nested media-objects -->
+<div class="sdi-media">
+	<div class="sdi-media__object">
+		<img src="/assets/images/figure.jpg" width="150" alt="our image"/>
+	</div>
+	<div class="sdi-media__content">
+		<p>Nested media-objects are great for threads</p>
+		<div class="sdi-media">
+			<div class="sdi-media__object">
+				<img src="/assets/images/figure.jpg" width="150" alt="our image"/>
+			</div>
+			<div class="sdi-media__content">
+				Some other content<br/>
+				Photo by Christopher Gower on <a href="https://unsplash.com/photos/m_HRfLhgABo">Unsplash</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+
+<div class="sdi-code"  id="media__markup">
+	<pre><code class="language-html">&lt;div class=&quot;sdi-media&quot;&gt;
+	&lt;div class=&quot;sdi-media__object&quot;&gt;
+		&lt;img src=&quot;/assets/images/figure.jpg&quot; width=&quot;150&quot; alt=&quot;our image&quot;/&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sdi-media__content&quot;&gt;
+		Some other content&lt;br/&gt;
+		Photo by Christopher Gower on &lt;a href=&quot;https://unsplash.com/photos/m_HRfLhgABo&quot;&gt;Unsplash&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- reverse direction and content is vertically centered --&gt;
+&lt;div class=&quot;sdi-media sdi-media--reversed sdi-media--center-vertical&quot;&gt;
+	&lt;div class=&quot;sdi-media__content&quot;&gt;
+		Some other content&lt;br/&gt;
+		Photo by Christopher Gower on &lt;a href=&quot;https://unsplash.com/photos/m_HRfLhgABo&quot;&gt;Unsplash&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sdi-media__object&quot;&gt;
+		&lt;img src=&quot;/assets/images/figure.jpg&quot; width=&quot;150&quot; alt=&quot;our image&quot;/&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- nested media-objects --&gt;
+&lt;div class=&quot;sdi-media&quot;&gt;
+	&lt;div class=&quot;sdi-media__object&quot;&gt;
+		&lt;img src=&quot;/assets/images/figure.jpg&quot; width=&quot;150&quot; alt=&quot;our image&quot;/&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sdi-media__content&quot;&gt;
+		&lt;p&gt;Nested media-objects are great for threads&lt;/p&gt;
+		&lt;div class=&quot;sdi-media&quot;&gt;
+			&lt;div class=&quot;sdi-media__object&quot;&gt;
+				&lt;img src=&quot;/assets/images/figure.jpg&quot; width=&quot;150&quot; alt=&quot;our image&quot;/&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;sdi-media__content&quot;&gt;
+				Some other content&lt;br/&gt;
+				Photo by Christopher Gower on &lt;a href=&quot;https://unsplash.com/photos/m_HRfLhgABo&quot;&gt;Unsplash&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="media__description">
+	<p>The media object is designed to align text and images.</p>
+<p>With <code>sdi-media--reversed</code> we can change the orientation on desktop.
+Keep in mind: Always lay the content as desired on mobile and reverse it on higher resolution with this class.</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="ui-list">
+								<h2>ui-list</h2>
+
+								<div class="sdi-preview" id="ui-list__preview">
+	<!-- horizontal -->
+<ul class="sdi-ui-list">
+	<li>horizontal item 1</li>
+	<li>horizontal item 2</li>
+	<li>horizontal item 3</li>
+</ul>
+
+<!-- vertical -->
+<ul class="sdi-ui-list sdi-ui-list--vertical">
+	<li>vertical item 1</li>
+	<li>vertical item 2</li>
+	<li>vertical item 3</li>
+</ul>
+
+</div>
+
+
+
+<div class="sdi-code"  id="ui-list__markup">
+	<pre><code class="language-html">&lt;!-- horizontal --&gt;
+&lt;ul class=&quot;sdi-ui-list&quot;&gt;
+	&lt;li&gt;horizontal item 1&lt;/li&gt;
+	&lt;li&gt;horizontal item 2&lt;/li&gt;
+	&lt;li&gt;horizontal item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- vertical --&gt;
+&lt;ul class=&quot;sdi-ui-list sdi-ui-list--vertical&quot;&gt;
+	&lt;li&gt;vertical item 1&lt;/li&gt;
+	&lt;li&gt;vertical item 2&lt;/li&gt;
+	&lt;li&gt;vertical item 3&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="ui-list__description">
+	<p><code>sdi-ui-list</code> is a useful wrapper for lists like navigation or breadcrumbs.
+The default list is layed out in horizontal direction. Add <code>sdi-ui-list--vertical</code> for vertical lists (like a navigation in a sidebar or a dropdown)</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+						
+						
+							
+
+							
+							<section id="wrapper">
+								<h2>wrapper</h2>
+
+								<div class="sdi-preview" id="wrapper__preview">
+	<div class="sdi-wrapper">
+	...
+</div>
+
+</div>
+
+
+
+<div class="sdi-code"  id="wrapper__markup">
+	<pre><code class="language-html">&lt;div class=&quot;sdi-wrapper&quot;&gt;
+	...
+&lt;/div&gt;
+</code></pre>
+</div>
+
+
+						
+						
+
+				
+
+						
+						
+
+						
+						
+
+								<hr/>
+
+								<h3 class="sdi-margin-bottom--25">When to use</h3><div class="sdi-description" id="wrapper__description">
+	<p>Wraps the whole page in <code>sdi-wrapper</code>.</p>
+<p>We can now change it's behavior in the setting modifying <code>$page-max-width</code>. When NOT set to <code>none</code> we can change the maximum width of all elements of the page. It automatically centers the content. The default is <code>$page-max-width: none</code> to make header and footer span the whole page. Otherwise it spans the entered width.</p>
+
+</div>
+<p class="h5 sdi-time sdi-margin-bottom--0">Last modified: 09 Mar 2021</p>
+
+							
+							</section>
+						
+
+				
+
+			</div>
+
+		</div>
+
+	</div>
+</main>
+
+
+
+		<footer class="sdi-footer sdi-center--s" role="contentinfo">
+	<div class="sdi-container">
+
+	</div>
+</footer>
+
+<!-- TODO: needs improvement -->
+
+	</div>
+
+	<a href="#" class="sdi-scroll-top">
+	<span class="sdi-scroll-top__icon">⇧</span>
+</a>
+
+
+<script src="/assets/js/site.js" type="text/javascript"></script>
+</body>
+</html>
